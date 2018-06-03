@@ -4,6 +4,7 @@
 typings
 /dist
 /tmp
+/out-tsc
 /app/**/*.js
 /app/**/*.js.map
 
@@ -14,6 +15,19 @@ jspm_packages
 
 # IDEs and editors
 /.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
 /.sass-cache
