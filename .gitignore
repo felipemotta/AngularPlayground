@@ -1,10 +1,7 @@
-# File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-
-# Created by https://www.gitignore.io/api/visualstudiocode,windows,angular,node
-
 ### Angular ###
 ## Angular ##
 # compiled output
+typings
 /dist
 /tmp
 /app/**/*.js
@@ -13,6 +10,7 @@
 # dependencies
 /node_modules
 /bower_components
+jspm_packages
 
 # IDEs and editors
 /.idea
@@ -93,13 +91,13 @@ typings/
 # dotenv environment variables file
 .env
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history
+### Visual Studio ###
+.vs
+**/*.sou
+**/*.user
+bin
+obj
+packages
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -121,9 +119,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
-# End of https://www.gitignore.io/api/visualstudiocode,windows,angular,node
-
-# Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
