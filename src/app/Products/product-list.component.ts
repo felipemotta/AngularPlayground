@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { IProduct } from './Product';
 
 @Component({
   selector: 'pm-products',
-  templateUrl: './product-list.component.html'
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
   pageTitle: string = 'Product List';
@@ -10,16 +12,16 @@ export class ProductListComponent {
   imageMargin: number = 2;
   showImage: boolean = false;
   listFilter: string = 'Cart';
-  products: any[] = [
+  products: IProduct[] = [
     {
-      'productId': 1,
+      'productId':   1,
       'productName': 'Leaf Rake',
       'productCode': 'GDN-0011',
       'releaseDate': 'March 19, 2016',
       'description': 'Leaf rake with 48-inch wooden handle.',
-      'price': 19.95,
-      'starRating': 3.2,
-      'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png'
+      'price':       19.95,
+      'starRating':  3.2,
+      'imageUrl':   'http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png'
     },
     {
         'productId': 2,
